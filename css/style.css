@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.user_container {
+  width: 180px;
+  background: #FFFFFF;
+  height: 20px;
+  padding: 10px 5px;
+  border-radius: 5px;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+.user_container input {
+  width: 140px;
+  border: none;
+  padding:0px 0px 5px 5px;
+  margin: 3px;
+  text-align: center;
+  color: #000000;
+  float: left;
+  outline: none;
+  background: none;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.social_icon {
+  color: rgba(100, 100, 100, .3);
+  float: left;
+  background: none;
+  height: 100%;
+}
+
+.social_icon span {
+  cursor: pointer;
+}
+
+.social_twitter.active, #social_twitter.active {
+  color: #1DA1F2;
+}
+
+.button {
+  padding: 10px 20px;
+  margin-top: 40px;
+  background-color:  #FFFFFF;
+  border: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#search_button {
+  display: none;
+}
+
+.button:hover {
+  background: #FFFFFF;
+}
+
+#error_message {
+  margin-top: 10px;
+  display: none;
+  margin-left: 0px;
+  color: #FFFFFF;
+  font-weight: bolder;
+}
+
+canvas {
+  position: relative;
+  z-index: 0;
+}
+
+.input_container {
+  position: absolute;
+  left: calc(50% - 125px);
+  top: 120px;
+  background: #1DA1F2;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  z-index: 2;
+}
+
+.input_container h1 {
+  height: 60px;
+  margin-top: 20px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+#alert_container {
+  display: none;
+  position: absolute;
+  top: 120px;
+  left: calc(50% - 125px);
+  background: #1DA1F2;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  z-index: 2;
+}
+
+.active {
+  display: inline-block !important;
+}
+
+#alert_container h1 {
+  color: #FFFFFF;
+  text-shadow: -1px 1px 1px #FFFFFF;
+}
+
+
+.followers_count {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.followers_amount { 
+  display: none; 
+  position: absolute; 
+  top: 25px; 
+  left: 20px; 
+  color: #000000;
+}
+
+#loader {
+  display: none;
+  border: 5px solid #FFFFFF;
+  border-radius: 50%;
+  border-top: 5px solid #86868D;
+  width: 25px;
+  height: 25px;
+  animation: spin 1.5s linear infinite;
+  margin-top: 40px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
